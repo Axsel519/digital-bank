@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Axsel519.github.io/digital-bank",
+  "homepage": "https://axsel519.github.io/digital-bank/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
