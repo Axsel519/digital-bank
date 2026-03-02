@@ -80,3 +80,133 @@
 .footer-btn:hover {
   opacity: 0.85;
 }
+
+/* Mobile First - Small Devices (320px - 480px) */
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 5%;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .footer-left {
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+  }
+  .links-column {
+    gap: 10px;
+    align-items: center;
+  }
+  .footer-links a {
+    font-size: 0.85rem;
+  }
+  .footer-right {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .footer-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .social {
+    justify-content: center;
+  }
+}
+
+/* Mobile Medium Devices (481px - 768px) */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    padding: 45px 7%;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .footer-left {
+    gap: 25px;
+  }
+  .footer-links {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-around;
+  }
+  .links-column {
+    gap: 12px;
+  }
+  .footer-right {
+    text-align: center;
+    align-items: center;
+  }
+  .footer-btn {
+    padding: 9px 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+/* Tablet Devices (769px - 1024px) */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    padding: 50px 8%;
+  }
+  .footer-container {
+    gap: 35px;
+  }
+  .footer-links {
+    gap: 50px;
+  }
+  .footer-right {
+    text-align: right;
+  }
+  .footer-btn {
+    padding: 10px 22px;
+    font-size: 15px;
+  }
+}
+
+/* Desktop (1025px - 1440px) */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .footer {
+    padding: 55px 9%;
+  }
+  .footer-container {
+    gap: 40px;
+  }
+  .footer-links {
+    gap: 70px;
+  }
+  .footer-btn {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
+}
+
+/* Extra Large Screens (1441px+) */
+
+@media (min-width: 1441px) {
+  .footer {
+    padding: 60px 10%;
+  }
+  .footer-container {
+    gap: 50px;
+  }
+  .footer-links {
+    gap: 80px;
+  }
+}
