@@ -1,0 +1,120 @@
+/** @format */
+
+:root {
+  --Blue-950: hsl(233, 26%, 24%);
+  --Green-500: hsl(136, 64%, 51%);
+  --Cyan-400: hsl(192, 69%, 51%);
+  --Gray-600: hsl(233, 8%, 62%);
+  --Gray-100: hsl(220, 16%, 96%);
+  --Gray-50: hsl(0, 0%, 98%);
+  --White: hsl(0, 100%, 100%);
+}
+
+.generation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.generation-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  width: 40%;
+  gap: 4vh;
+  position: relative;
+  top: -40vh;
+  padding: 10vh;
+}
+
+h1 {
+  color: var(--Blue-950);
+  white-space: nowrap;
+}
+
+.generation-image {
+  position: relative;
+  top: -280px;
+  right: 0px;
+  background-image: url("../assets/images/bg-intro-desktop.svg");
+  width: 50%;
+  background-repeat: no-repeat;
+}
+
+.generation-image img {
+  width: 100%;
+  margin: 32vh 8vw;
+  z-index: 1000;
+}
+
+.choose {
+  background-color: var(--Gray-100);
+  margin-top: -90vh;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10vh;
+  width: 100%;
+}
+
+.top {
+  width: 55vw;
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 5vw;
+}
+
+.latest {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5vh;
+  padding: 3vw;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3vh;
+  background-color: var(--Gray-50);
+}
+
+.details img {
+  width: 100%;
+  border-radius: 1vw 1vw 0vw 0vw;
+}
+
+h6 {
+  color: var(--Gray-600);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.all-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5vw;
+}
+
+.text-detais {
+  padding: 1vw;
+}

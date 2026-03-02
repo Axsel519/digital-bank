@@ -1,0 +1,87 @@
+/** @format */
+
+:root {
+  --Blue-950: hsl(233, 26%, 24%);
+  --Green-500: hsl(136, 64%, 51%);
+  --Cyan-400: hsl(192, 69%, 51%);
+  --Gray-600: hsl(233, 8%, 62%);
+  --Gray-100: hsl(220, 16%, 96%);
+  --Gray-50: hsl(0, 0%, 98%);
+  --White: hsl(0, 100%, 100%);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--White);
+  z-index: 1000;
+}
+
+.header-btn button {
+  background: linear-gradient(45deg, var(--Cyan-400), var(--Green-500));
+  color: var(--White);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 200, 150, 0.3);
+}
+
+/* Hover */
+
+.header-btn button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 200, 150, 0.4);
+}
+
+/* لما يتداس */
+
+.header-btn button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 200, 150, 0.2);
+}
+
+.header-links {
+  display: flex;
+  gap: 30px;
+}
+
+.header-links a {
+  color: var(--Gray-600);
+  text-decoration: none;
+}
+
+.header-links a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.header-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--Green-500);
+  transition: width 0.3s ease-in-out;
+}
+
+.header-links a.active {
+  color: var(--Green-500);
+}
+
+.header-links a.active::after {
+  width: 100%;
+}
